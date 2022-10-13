@@ -1,0 +1,74 @@
+.why-choose-easybank {
+    @media (max-width: 425px) {
+        padding: 0%;
+        width: 100%;
+
+    }
+    height: 70%;
+    width: 100%;
+    background-color: $neutral-light-grayish-blue;
+    position: relative;
+    z-index: -200;
+
+    &_res {
+        @media (max-width: 425px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        
+    }
+
+    &__text {
+        @media (max-width: 425px) {
+            margin-left: 0%;
+            margin-right: 0%;
+            padding: 0%;
+        }
+        position: absolute; 
+        padding-left: $main-margin;
+        padding-right: $main-margin;
+    }
+
+    &__reasons {
+        @media (max-width: 1158px) {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: 200px 200px;
+        }
+        @media (max-width:738px) {
+            grid-template-columns: auto;
+        }
+        @media (max-width: 425px) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+        }
+        width: 100%;
+        display: flex;
+        flex: 1 0;
+        gap: 2em;
+        align-self: center;
+    }
+
+    &__img {
+        @media (max-width: 425px) {
+            align-self: center;
+        }
+    }
+
+    &__reasontitle {
+        @media (max-width: 425px) {
+            align-self: center;
+        }
+        font-weight: 400;
+    }
+}
+.title {
+}
+.paragraph {
+
+}

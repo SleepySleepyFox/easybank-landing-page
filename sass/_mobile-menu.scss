@@ -1,0 +1,33 @@
+.mobile-menu {
+    @media (max-width: 425px) {
+        transform: translate(-50%);
+        left: 50%;
+        height: 0%; 
+        top: 60px;
+        position: fixed;
+        border-radius: 0%;
+    }
+        z-index: 100;
+        background-color: white;
+        position: absolute;
+        width: 0%;
+        height: 0%;
+        top: 80px;
+        right: 0%;
+        border-radius: 2% 0% 0% 2%;
+        transition: 0.3s;
+        overflow: hidden;
+    &__menu-area {
+        @media (max-width: 425px) {
+            display: flex;
+            flex-direction: column;
+        }
+        margin-left: 35px;
+    }
+    &__link {
+        color: $primary-dark-blue;
+        text-decoration: none;
+        justify-self: center;
+    }
+
+}

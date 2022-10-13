@@ -1,0 +1,102 @@
+.main-header {
+    @media (max-width: 425px) {
+        height: 60px;
+    }
+    background-color: white;
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    height: 80px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    &__navigation {
+        @media (max-width: 768px) {  
+            display: none;
+        }
+
+    }
+    &__list {
+        @media (max-width: 831px) {
+            gap: 2em;
+            
+        }
+        margin: 0%;
+        justify-content: space-between;
+        display: inline-flex;
+        gap: 3em;
+        list-style: none;
+    }
+    &__item {
+    }
+    &__link{
+        text-decoration: none;
+        color: black;
+        &:hover{
+            &::before{
+                width: 35px;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.2s;
+            }
+        }
+        &::before{
+            position: absolute;
+            content: " ";
+            height: 3px;
+            width: 0;
+            bottom: 20%;
+            background-color: hsl(136, 65%, 51%);
+        }
+    }
+    &__mobile-menue{
+        display: none;
+        @media (max-width: 768px) {
+            display: block;
+            margin-right: 20px;
+            align-self: center;
+        }
+        
+    }
+    
+    .invite{
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+.logo {
+    @media (max-width: 956px) {
+        margin-left: 20px;
+    }
+    @media (max-width: 768px) {  
+        margin-left: 20px;
+    }
+    @media (max-width: 425px) {
+        width: 20%;
+    }
+    margin-left: $main-margin;
+}
+.invite {
+    @media (max-width: 1000px) {
+        width: 7em;
+        height: 2.5em;
+    }
+    @media (max-width: 956px) {
+        margin-right: 20px;
+    }
+    @media (max-width: 831px) {
+        margin-left: 20px;
+        width: 120px;
+    }
+    z-index: 100;
+    position: relative;
+    margin-right: $main-margin;
+    border-top-left-radius: 25% 30px;
+    border-top-right-radius: 25% 30px;
+    border-bottom-left-radius: 25% 30px;
+    border-bottom-right-radius: 25% 30px;
+    height: 40px;
+    border: none;
+    background: linear-gradient(45deg, $primary-lime-green, $primary-brigh-cyan);
+    color: white;
+}

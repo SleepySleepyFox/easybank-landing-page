@@ -1,0 +1,107 @@
+.next-gen-digital-banking {
+    overflow-x: hidden;
+    position: relative;
+    z-index: -100;
+    min-height: 100vh;
+    width: 100%;
+    left: 0%;
+    padding-bottom: 20px;
+    background-color: $neutral-very-light-gray;
+    &__img {
+    }
+
+    &__bg {
+        @media (max-width: 1244px) {
+            right: -40%;
+        }
+
+        @media (max-width: 425px) {
+            position: relative;
+            top: 0%;
+            right: 0%;
+            min-width: 100vw;
+        }
+        z-index: -2;
+        position: absolute; 
+        right: -20%;
+        top: -5%;
+        min-width: 40%;
+        max-width: 90%;
+        // overflow: visible;
+    }
+
+    &__mockup {
+        @media (max-width: 974px) {
+            top: -10%;
+        }
+        @media (max-width: 700px) {
+            top: -6%;
+        }
+        @media (max-width: 425px) {
+            top: -4%;
+            right: 25%;
+    
+        }
+        position: absolute; 
+        right: -10%;
+        top: -15%;
+        z-index: -2;
+        max-width: 50%;
+        min-width: 20%;
+        overflow-x: hidden;
+    }
+
+    &__text {
+        @media (max-width: 1244px) {
+            width: 45%;
+        }
+        @media (max-width: 768px) {
+            margin-left: 1.5em;
+            width: 50%;
+        }
+        @media (max-width: 425px) {
+            position: relative;
+            top: -10%;
+            width: 100vw;
+            margin-left: 0%;
+
+            display: flex;
+            flex-direction: column;
+        }
+        position: absolute; 
+        margin-left: $main-margin;
+        top: 25%;
+        width: 30%;
+        z-index: 100;
+        .__text:last-child{
+            margin-top: 20px;
+        }
+    }
+}
+.title {
+    @media (max-width: 828px) {
+        font-size: 40px;
+    }
+    @media (max-width: 425px) {
+        text-align: center;
+    }
+    font-weight: 400;
+    font-size: 50px;
+    color: $primary-dark-blue;
+}
+.paragraph {
+    @media (max-width: 425px) {
+        text-align: center;
+    }
+    font-weight: 400;
+    color: $neutral-grayish-blue;
+}
+.txtBtn{
+    @media (max-width: 425px) {
+        justify-self: center;
+        align-self: center;
+    }
+    align-self: flex-start;
+    margin: 0%;
+}
+

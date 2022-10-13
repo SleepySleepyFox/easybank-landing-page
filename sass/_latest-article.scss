@@ -1,0 +1,123 @@
+.latest {
+    height: 70%;
+    width: 100%;
+    background-color: #ffffff;
+    position: relative;
+    overflow-x: none;
+    z-index: -2;
+    padding-bottom: 3em;
+    &__article {
+        @media (max-width: 1100px) {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto auto;
+            gap: 2em;
+        }
+        @media (max-width: 625px) {
+            padding-left: 80px;
+            padding-right: 30px;
+        }
+        @media (max-width: 629px) {
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        display: flex;
+        position: relative;
+        padding-left: $main-margin;
+        padding-right: $main-margin;
+        justify-content: space-between;
+        gap: 0.5em;
+        
+    }
+
+    h1{
+        margin-top: 0%;
+        padding-top: $main-margin;
+        padding-left: $main-margin;
+        padding-right: $main-margin;
+    }
+    p{
+        @media (max-width:1156px) {
+            padding-left: 5%;
+            padding-right: 5%;  
+        }
+        @media (max-width: 1100px) {
+            display: none;
+        }
+        @media (max-width: 425px) {
+            display: block;
+        }
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+
+    &__block {
+        @media (max-width: 629px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+    }
+
+    &__img {
+        @media (max-width: 1350px) {
+            width: 250px;
+            height: 150px;
+        }
+        @media (max-width: 1185px) {
+            width: 230px;
+            height: 130px;
+        }
+        @media (max-width: 425px) {
+            width: 100%;
+            height: 100%;
+        }
+        
+        width: 300px;
+        max-height: 200px;
+        border-radius: 3%;
+    }
+
+    &__author {
+        @media (max-width:1156px) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+        @media (max-width: 1000px) {
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+        @media (max-width: 425px) {
+            text-align: center;
+        }
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    &__arttitle {
+        @media (max-width:1156px) {
+            padding-left: 5%;
+            padding-right: 5%;
+            width: 150px; 
+        }
+        @media (max-width: 1000px) {
+            padding-left: 0%;
+            padding-right: 0%;
+        }
+        @media (max-width: 425px) {
+            text-align: center;
+        }
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+}
+.title {
+}
+.paragraph {
+}
